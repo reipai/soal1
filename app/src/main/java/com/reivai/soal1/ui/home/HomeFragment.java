@@ -13,9 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
-import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.widget.ViewPager2;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -30,7 +28,7 @@ import java.util.TimerTask;
 
 public class HomeFragment extends Fragment {
 
-    private ViewPager viewPager;
+    private ViewPager2 viewPager;
     private List<HomeModel> homeModels;
     private SliderAdapter adapter;
     private static int currentPage = 0;

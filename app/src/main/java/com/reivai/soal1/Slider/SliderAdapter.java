@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.bumptech.glide.Glide;
-import com.reivai.soal1.Api;
 import com.reivai.soal1.R;
 import com.reivai.soal1.ui.home.HomeModel;
 
@@ -16,15 +15,15 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.widget.ViewPager2;
 
 public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.ViewHolder> {
     private List<HomeModel> homeModels;
     private LayoutInflater inflater;
-    private ViewPager viewPager;
+    private ViewPager2 viewPager;
     Context context;
 
-    public SliderAdapter(Context context, List<HomeModel> homeModels, ViewPager viewPager) {
+    public SliderAdapter(Context context, List<HomeModel> homeModels, ViewPager2 viewPager) {
         this.inflater = LayoutInflater.from(context);
         this.homeModels = homeModels;
         this.viewPager = viewPager;
